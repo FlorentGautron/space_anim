@@ -1,0 +1,380 @@
+/* ********    FOND    ******** */
+
+.dimensions_fond{
+    position: relative;
+    width : 100vw;
+    overflow:hidden;
+    z-index:3;
+    max-width: 1000px;
+    height: 100%;
+}
+@keyframes dimensions_fond {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.image_fond{
+    animation: image_fond 300s linear infinite;
+}
+.class_fond_x{
+    position:absolute;
+    width: 2000px;
+    height: 2000px;
+    left:-50%;
+    top:-50%;
+}
+@keyframes image_fond{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+/* ********    COCKPIT    ******** */
+.dimensions_cockpit{
+    width: 1000px;
+    height: 1000px;
+    position: relative;
+    overflow: hidden;
+    z-index : 1000;
+}
+.image_cockpit_haut{
+    z-index: 20;
+    width : 100vw;
+    max-width: 1000px;
+    position: absolute;
+    top : 0;
+    left : 0;
+}
+.image_cockpit_bas{
+    z-index: 15;
+    position: absolute;
+    width : 100vw;
+    max-width: 1000px;
+    top : 110%;
+    left : 0;
+    transform: translate(0, -100%);
+}
+
+/* ********    PLANETES    ******** */
+/*  DIV  */
+.class_div_img{
+    position: absolute;
+    transform : translate(-50%, -50%);
+    transition: all 1s ease-in-out;
+    transform-origin:  left top  !important; /*  TOP LEFT CAR TRANSLATE -50% */
+}
+.class_div_img:hover {
+    display: inline-block !important;
+    -webkit-transform: scale(1.1) translate(-50%, -50%) !important; /* Chrome, Safari, Opera */
+    transform: scale(1.1) translate(-50%, -50%) !important; /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    transform-origin: left top !important; /*  TOP LEFT CAR TRANSLATE -50% */
+}
+
+/* IMAGE */
+.planete{
+    text-align: center;
+    display: inline-block;
+    transform-origin: center !important;
+}
+/* TEXTE */
+.hide, .hide > a, .hide > div {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+    width : 0 !important;
+    height : 0 !important;
+    margin : 0 !important;
+    padding : 0 !important;
+}
+.positionTexte{
+    width : auto;
+    height : auto;
+    position: absolute;
+    padding : 15px;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: 1fr;
+    top : 50%;
+    left :50%;
+    text-align: center;
+    horiz-align: center;
+    vertical-align: center;
+    border-radius: 15px;
+    color: #17253E;
+    background-color: white;
+    min-width: fit-content;
+    z-index : 16;
+
+}
+.class_div_planete_2{
+    position: relative;
+
+    grid-template-rows: auto 1fr;
+    display: grid;
+}
+.titre_planete{
+    background-size: contain;
+    margin: 0 auto;
+}
+
+.class_div_planete{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.class_div_planete a{
+    display : block;
+}
+.ahrefSavoirPlus{
+    color : #CD9F25;
+    text-align: center;
+    margin-top : 5px;
+    margin-bottom : 0;
+    text-decoration:none;
+    font-weight: bold;
+}
+
+/* ********              PLANETE   1          ******** */
+
+.div_planete_1{
+    top: 19%;
+    left: 75%;
+    width: 170px;
+    height: 170px;
+}
+.image_planete_1{
+    position: relative;
+    animation: rotation_planete_1 150s linear infinite;
+    width : 100%;
+    z-index: 5;
+}
+@keyframes rotation_planete_1 {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.div_planete_1:hover + .hide {
+    display: block;
+    font-size: 100px;
+}
+
+/* ********              PLANETE   2          ******** */
+.div_planete_2{
+    top: 59%;
+    left: 13%;
+
+    width: 180px;
+    height: 180px;
+}
+.image_planete_2{
+    position: relative;
+    width: 100%;
+    z-index: 6;
+    animation: image_planete_2 200s linear infinite;
+    transition:0.5s;
+}
+@keyframes image_planete_2 {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(-360deg);
+    }
+}
+
+/* ********              PLANETE   3          ******** */
+.div_planete_3{
+    top: 22%;
+    left: 30%;
+
+    width: 250px;
+    height: 250px;
+}
+.image_planete_3{
+    position: relative;
+    width: 100%;
+    z-index: 7;
+    animation: image_planete_3 400s linear infinite;
+    transition:0.5s;
+}
+@keyframes image_planete_3 {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(-360deg);
+    }
+}
+
+/* ********              PLANETE   4          ******** */
+.div_planete_4{
+    top: 45%;
+    left: 85%;
+    width: 130px;
+    height: 130px;
+}
+.image_planete_4{
+    position: relative;
+    width: 100%;
+    z-index: 8;
+    animation: image_planete_4 200s linear infinite;
+    transition: 0.5s;
+}
+@keyframes image_planete_4 {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(-360deg);
+    }
+}
+
+/* ********              PLANETE   5          ******** */
+.div_planete_5{
+    top: 46%;
+    left: 43%;
+    width: 140px;
+    height: 140px;
+}
+.image_planete_5{
+    position: relative;
+    width: 100%;
+    z-index: 9;
+    animation: image_planete_5 150s linear infinite;
+    transition: 0.5s;
+}
+@keyframes image_planete_5 {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+/* ********              PLANETE   6          ******** */
+.div_planete_6{
+    top: 63%;
+    left: 62%;
+    width: 150px;
+    height: 150px;
+}
+.image_planete_6{
+    position: relative;
+    width: 100%;
+    z-index:10;
+    animation: image_planete_6 270s linear infinite;
+    transition: 0.5s;
+}
+@keyframes image_planete_6 {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+/* ********              PLANETE   7          ******** */
+.div_planete_7{
+    top: 30%;
+    left: 10%;
+    width: 40px;
+    height: 40px;
+}
+.image_planete_7{
+    position: relative;
+    width: 100%;
+    z-index: 11;
+    animation: image_planete_7 300s linear infinite;
+    transition: 0.5s;
+}
+@keyframes image_planete_7 {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+/* ********              Animation affichage menu          ******** */
+
+.animation_div_texte{
+    animation: animationDivTexte linear;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+    animation-duration: 1.5s;
+}
+
+@keyframes animationDivTexte {
+    from{
+        height: 20px;
+        width: 100px;
+    }
+    to{
+        height : 200px;
+        width : 150px;
+    }
+}
+.animation_div_texte h3{
+    animation: animationDivTexte_titre linear;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+    animation-duration: 1.5s;
+}
+@keyframes animationDivTexte_titre {
+    from{
+        font-size: 1em;
+    }
+    to{
+        font-size: 2em;
+    }
+}
+/* ************************************************        RESPONSIVE       ************************************************ */
+@media only screen and (max-width:850px) {
+    .div_planete_2{
+        top: 65%;
+        left: 16%;
+    }
+    .div_planete_6{
+        top: 72%;
+        left: 62%;
+    }
+}
+
+@media only screen and (max-width:650px) {
+    .div_planete_2{
+        top: 73%;
+        left: 24%;
+    }
+    .div_planete_3{
+        top: 41%;
+        left: 30%;
+    }
+    .div_planete_4{
+        top: 46%;
+        left: 80%;
+    }
+    .div_planete_5{
+        top: 13%;
+        left: 35%;
+    }
+    .div_planete_6{
+        top: 79%;
+        left: 67%;
+    }
+    .div_planete_7{
+        top: 22%;
+        left: 10%;
+    }
+}

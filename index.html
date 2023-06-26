@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="planete.css">
+    <link rel="stylesheet" href="mouvement.css">
+    <link rel="stylesheet" href="globale.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <title>Space Anim Menu</title>
+</head>
+
+<body id="id_body">
+<!-- DIV SPACE ANIME -->
+    <div id="id_div_globale" class=" panel-collapse collapse  dimensions_fond class_div_globale"  style="transition: all 1.5s ease; ">
+        <img id="id_image_fond" class="class_fond_x image_fond" src="images/espace.jpg" alt="image_espace">
+        <img class="image_cockpit_bas" src="images/navette-bas.png" alt="image_cokpit_navette_bas">
+        <a onclick="console.log('click bouton')" data-toggle="collapse" data-target="#id_div_globale" >
+            <button id="id_bouton_close_collapse">Close</button>
+        </a>
+
+        <div data-planete="1" data-actif="0" id="divImg1" class="div_planete div_planete_1 class_div_img select top 1 " onmouseleave="hideTexte('1')" onmouseover="showTexte('1')" onclick="planeteAnimation('1')">
+            <img class="planete image_planete_1" src="images/planete.png" alt="image_planete_terre">
+            <div id="div_texte_planete_1" class="hide positionTexte" style="width : auto; height : auto;">
+                <h3 id="titre_planete_1"  class="hide titre_planete" >Earth</h3>
+                <div id="div_menu_planete_1" class="hide class_div_planete">
+                    <div class=" class_div_planete_2">
+                        <a class="ahrefSavoirPlus" href="#">Sub Menu</a>
+                        <a class="ahrefSavoirPlus" href="#">Sub Menu</a>
+                        <!--<a href="#">Sub Menu</a>-->
+                        <!--<a href="#">Sub Menu</a>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div data-planete="2" data-actif="0" id="divImg2" class="div_planete div_planete_2 class_div_img select bottom 2" onmouseleave="hideTexte('2')" onmouseover="showTexte('2')" onclick="planeteAnimation('2')">
+            <img class="planete image_planete_2" src="images/red.png" alt="image_planete_rouge">
+            <div id="div_texte_planete_2" class="hide positionTexte"  style="">
+                <h3 id="titre_planete_2"  class="hide titre_planete">Mars</h3>
+                <div id="div_menu_planete_2" class="hide class_div_planete">
+                    <div class=" class_div_planete_2">
+                        <a class="ahrefSavoirPlus" href="#">Sub Menu</a>
+                        <a class="ahrefSavoirPlus" href="#">Sub Menu</a>
+                        <!--<a href="#">Sub Menu</a>-->
+                        <!--<a href="#">Sub Menu</a>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div data-planete="3" data-actif="0" id="divImg3" class="div_planete div_planete_3 class_div_img select top 3" onmouseleave="hideTexte('3')" onmouseover="showTexte('3')" onclick="planeteAnimation('3')">
+            <img class="planete image_planete_3" src="images/green.png" alt="image_planete_verte">
+            <div id="div_texte_planete_3" class="hide positionTexte">
+                <h3 id="titre_planete_3" class="hide titre_planete">Jupiter</h3>
+                <div id="div_menu_planete_3" class="hide class_div_planete">
+                    <div class=" class_div_planete_2">
+                        <a class="ahrefSavoirPlus" href="#">Sub Menu</a>
+                        <a class="ahrefSavoirPlus" href="#">Sub Menu</a>
+                        <!--<a href="#">Sub Menu</a>-->
+                        <!--<a href="#">Sub Menu</a>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div data-planete="4" data-actif="0" id="divImg4" class="div_planete div_planete_4 class_div_img select right 4" onmouseleave="hideTexte('4')" onmouseover="showTexte('4')" onclick="planeteAnimation('4')">
+            <img class="planete image_planete_4" src="images/orange.png" alt="image_planete_orange">
+            <div id="div_texte_planete_4" class="hide positionTexte">
+                <h3 id="titre_planete_4" class="hide titre_planete">Venus</h3>
+                <div id="div_menu_planete_4" class="hide class_div_planete">
+                    <div class=" class_div_planete_2">
+                        <a class="ahrefSavoirPlus" href="#">Sub Menu</a>
+                        <a class="ahrefSavoirPlus" href="#">Sub Menu</a>
+                        <!--<a href="#">Sub Menu</a>-->
+                        <!--<a href="#">Sub Menu</a>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div data-planete="5" data-actif="0" id="divImg5" class="div_planete div_planete_5 class_div_img select bottom 5" onmouseleave="hideTexte('5')" onmouseover="showTexte('5')" onclick="planeteAnimation('5')">
+            <img class="planete image_planete_5" src="images/yellow.png" alt="image_planete_jaune">
+            <div id="div_texte_planete_5" class="hide positionTexte">
+                <h3 id="titre_planete_5" class="hide titre_planete">Mercury</h3>
+                <div id="div_menu_planete_5" class="hide class_div_planete">
+                    <div class=" class_div_planete_2">
+                        <a class="ahrefSavoirPlus" href="#">Sub Menu</a>
+                        <a class="ahrefSavoirPlus" href="#">Sub Menu</a>
+                        <!--<a href="#">Sub Menu</a>-->
+                        <!--<a href="#">Sub Menu</a>-->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div data-planete="6" data-actif="0" id="divImg6" class="div_planete div_planete_6 class_div_img select bottom 6" onmouseleave="hideTexte('6')" onmouseover="showTexte('6')" onclick="planeteAnimation('6')">
+            <img class="planete image_planete_6" src="images/bleu.png" alt="image_planete_bleu">
+            <div id="div_texte_planete_6" class="hide positionTexte">
+                <h3 id="titre_planete_6" class="hide titre_planete">Uranus</h3>
+                <div id="div_menu_planete_6" class="hide class_div_planete">
+                    <div class=" class_div_planete_2">
+                        <a class="ahrefSavoirPlus" href="#">Sub Menu</a>
+                        <a class="ahrefSavoirPlus" href="#">Sub Menu</a>
+                        <!--<a href="#">Sub Menu</a>-->
+                        <!--<a href="#">Sub Menu</a>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div data-planete="7" data-actif="0" id="divImg7" class="div_planete div_planete_7 class_div_img select left 7" onmouseleave="hideTexte('7')" onmouseover="showTexte('7')" onclick="planeteAnimation('7')">
+            <img class="planete image_planete_7" src="images/black.png" alt="image_planete_noir">
+            <div id="div_texte_planete_7" class="hide positionTexte">
+                <h3 id="titre_planete_7" class="hide titre_planete">Neptune</h3>
+                <div id="div_menu_planete_7" class="hide class_div_planete">
+                    <div class=" class_div_planete_2">
+                        <a class="ahrefSavoirPlus" href="#">Sub Menu</a>
+                        <a class="ahrefSavoirPlus" href="#">Sub Menu</a>
+                        <!--<a href="#">Sub Menu</a>-->
+                        <!--<a href="#">Sub Menu</a>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- WEB SITE CONTENT -->
+    <div id="div_nav" style="background-color: #fff; width : 100%; min-height : 100vh;  transition: all 1.5s ease; ">
+        <nav style="height : 150px; width : 100%; background-color: #CD9F25; vertical-align: center">
+            <a data-toggle="collapse" data-target="#id_div_globale" href="index.html">
+                <img class="img_menu" alt="logo" src="images/bleu.png" style="">
+            </a>
+            <a data-toggle="collapse" data-target="#id_div_globale" href="#">
+                <img class="img_menu" alt="menu" src="images/menu.png" style="float: right">
+            </a>
+        </nav>
+
+
+        <div  style="background-color: #fff; width : 100%; min-height : calc(100vh - 150px)" >
+            <div style=" width : 100%; min-height : calc(100vh - 150px); text-align: center;">
+                <h1 style="margin-top : 50px;"> Your Content here</h1>
+                <h4 style="font-weight: bold;margin-top: 50px">Section 1.10.32 du "De Finibus Bonorum et Malorum" de Ciceron (45 av. J.-C.)</h4>
+                <p style="text-justify: inter-word; padding : 50px; margin-top: 30px;">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+                <h4 style="font-weight: bold;margin-top: 50px">Section 1.10.33 du "De Finibus Bonorum et Malorum" de Ciceron (45 av. J.-C.)</h4>
+                <p style="text-justify: inter-word; padding : 50px; margin-top: 30px;">"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <script type="text/javascript" src="animation.js"></script>
+    </footer>
+</body>
+
+<!--
+                                                                                                                             (
+                                                                                                                             #,.
+                                                                                                                             ,#(.
+                                                                                                                               %#
+                                                                                                                                %*
+                                                                                                                                 &,
+                                                                                                                               .  &.
+                                                                                                                                  .#.                                       ,&@@@@&&&%&*
+                                                                                                                                   ,(.    .....                            ,%&%%%&&&@&/.
+                                                                                                                                    /(#((((##%%&@(.                        .%##%@(/@(,((
+                                                                                                                                    *(#%#(#&%(* #.                          #&@@@//(*..(,
+                                                                                                                                   *#(@&(*%(*./,,                            .#*..*(...,
+                                                                                                                                   *@%&#@(&(%#(&%.                          .#,,..*(.
+                                                                                                         ,//%(((/.                 (&%%%%#(@&*/#&,                        #(///,*.*
+                                                                                                      .&&&&#&%&%&&%/               (((%#*/.,%&&#/                       /(,...,,./,,
+                                                                            ...,..                   ((&@(@(@&&(.. *              ,/   //  .,                           *,.. *,*.,,,.
+                                                                        ,(&@@@@&&%&//             .#&@&&&@@@,#&%**/.             ./,.   ... ,*.                       .*,..,*,&,.   ,*                  /#/
+                                                                   .,*#%&@@@@@@@@&&@%             /%#%&%&@@&&&@##,//             %%(,,./,...,.*/                     .(..,*,%*.. .. .(*                /#/
+                                                                ,(***/((%#%%&&%(%%(,%&          *%/(,/**(/&&&&@&%%/             #/,.*,,#(*,*,.*#*                    (...*/#%,... ..*(                /#/
+                                                              *.(*,##,(/*(/#&@%&%%&*((         (/.*//,.   (%&.                 ,/..   /(,..,../@.                   (..,***((*,.. ..,./     _________/#/
+                                                            ,/,((/&#%#(*..*##%&@&&#(,#        #*/*(%#*,,**/(.                  /, .,,(/*,.....,#                    *,...* */*,,....,,*.   |### WEB ###|
+                                                           /*,/(#(#((#%/(#*%/     .          ,(/%##(//,*//,#.                 ,*/..,@(/,....,,,&*                    ,.. / .#((/,....,**,,..  .,..
+                                                         *./**%&*(*,,*%(@,%,                /.( (//*,. ./#(&                   //. .((,..,..*// &,                   .,..*#.((,,,,..,,,((*****/#/*/.
+                                                        ///*(&&##/.,*//&#/(                ,*((*((**..,(/#,                    /,,  ,%(****.*,*..#,                   .,,/#*/,,...,.,/**
+                                                      .*(#/(%%%(/,//*%(/%.                 #,,**/((*,**(*/                     .#*. ,(.. .*, ,/,.,%,                   *.*((*..  ..., (.
+                                                     ,(//%#%&(#/*.,#/((/                   (..#,,*(*(,   .*,                    ,#*.,, . ..  (#/,/.%.                   *,,#,.. ..,.,,/.
+                                                    ,#((#%%&%(%#//,*##,                    ./%%(//#%#*,/*,.,.,*.                 /,//*.,*//, *,,#/,*%                   *...* ..,,...,,,
+                       ./**/*,/%.                 .((*/(#&&@&/&%#.,*(.                       *,.,*,.#(,*#/,,*,,*//**,.,/.        ./**,*. ..,,,,* *%(/*/.                / ..**,,,....,,/.
+                    .,&#&/&&@&.(@%                (**,**(#&%&&#%%(,//                       ,.,,,,. .*/((.     ,(#/*(*,/*         #*.,,.*  ....,*  *(%** .              .//#(,**,.....,*,
+                .,/*//,.(%//#&@/#./*              /,,/(#%(/*%@#@#(*/*                      /..*....... ,(,        ,//(@.          .((#/#(,.  . ,*,   .#/                   *,*((,.   .,/,
+             ****/***//*,**/&@&#%/##.             *%,*,/(#(/*#&#%%/*,                      ,/**,..  ..  .,/,    .**%(             .%&@##,**.   .,(     %*                  *.,/*/,.  .,**
+         ,//*****/(#,//(%*(*,*#.%,                  ,((///##%(%@#%#/.                       ./***,.    .. .,#,                    .%%%%(**.* ,.../.     &,                 , ./%(,.  ../*
+       ********//#(%(##&%##*,,(                      ,@&##/#%&%@#(&**                         &&%/**,,,. ...,/(                   .(#((%(*/*,..,,/*      #,                ,.,/(#/,.. ,/,
+     (/////((((#(%%%&&&&@&&/**/                       (@@%#%(%@@&*#,/(                        (%%&%(/**,..,,,,(#                   (/**/#%///,..,,(       #,              ,,,,/(//,..,/*.
+   *,,,(%&%%%%(%(&%&@@&&@&%(/(#                        /@@&%%&@&/(/.*/(                        #%#((#%#/,.*.,/*,(  .              .//.,*/#.(/,*,.(*,                     /,,.,*,./*  ,*,.
+ /(/*(/,,,,*%%%&&@@@&@&#&@&#(%(                        .%#(&%(&#%%&%#*/#.                      .(/*,*,/.*%/,(*.**(               */*//,(#   (%*.,(/(                   .,..,*#. ./*..*/,
+ /((#%#(///**//##.@@@@@ &@@&###                     .*##(&(%##(. (&#//(#                      /(//,.,* .  */(*,*//.             /,..*,//    /(,. *((                  ,.  ./(   /,.,.*/
+  ,(##%&%&%##%%##*@&&&(%&(%%(/(#.                 .#//*,(((&%,  (%*/*(((                   /*...,*.,,,   ./* . ./              *.....*/.    #*...,(*                 ,,  .(/   ,.. .,/ .
+   /#@&##%&&&&@&%#/&%%. ,#%&&#//(,               /#///(%&&%.   .#(#**/(#                 **. ...,*/      /..  ../             .*.,.,./.    ,... ..**                 *. ,(,    *.  .,*
+    *##&@@&#%&&&(/(#&.     *%&#(**#             ,&&(&%@&*      ,%#(#*(%/                ,*,*,***        .,,,..,,,             ,*,,,,*,     ///,.../,                /,.*(.     /,. ./.
+  /##&@&@@#  .%(#(/&,        ,#%%%/#.          /###&@(.         .%%%((%*               **,.*/.           /*,.,/#              ./,,,*#       /(/..,(                .*,,(       ,*..,/
+*#%%%%@#.    ,%&%##&.          .%@&(#   .    ,#(((%(             (#//(#              *.(,,(,              #/,*(,               */**/.        #/*,*/                //,(        ,,../.
+#*%&&%#        .%&(//(,            .*#/&, .  %,,**/*%              (&((((           ,*../,.**               ,,.*#               .*,(/(         .**.,*/             ./**/#        ....*
+(*//&        .%@##&/             /*&&..      *%#//*/%.           **%,/,//           *(/,.,/              *,/.,.*.             ,*(/,//         **,,..,            ..,..,.,      ,,,.,* . .
+ (%*#&##/....,/%#,,,///(//.      *(/#@(         .%/..,*./(       /.,,,/,,..,//*,.      */, ,//.         .**#(*,.,,,,.   .    .*,.,,*,,**/#(.  (((,.,*/,         .,,,,,//,..,,. *.*.,.,,*,. . ..
+             .*/*/(((#(/*                           ..............,,,,.,,.,/,**/*.     ....,,,.....,**/((#(((#(/,,*,/(((....,*///********,...,,.,,..  ..,****..  ....,,******///..****,,.,*,,.
+                                                                           .                             .                                                    .                  .           .
+-->
+
+</html>

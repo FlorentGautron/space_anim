@@ -1,0 +1,139 @@
+.class_div_animation_click_planete{
+    animation-name: animation_div_click_planete ;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    z-index : 15;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+@keyframes animation_div_click_planete {
+    100%{
+        width: 600px ;
+        height: 600px ;
+        top: 40%;
+        left: 50%;
+    }
+}
+
+/*** RAJOUT ANIMATION MOUVE AWAY PLANETE ***/
+.top_1000{
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-name: animation_top_planete ;
+}
+.bottom_1000{
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-name: animation_bottom_planete ;
+}
+.left_1000{
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-name: animation_left_planete ;
+}
+.right_1000{
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-name: animation_right_planete ;
+}
+
+@keyframes animation_top_planete {
+    100%{
+        top: -1000px;
+    }
+}
+@keyframes animation_bottom_planete {
+    100%{
+        top: +1000px;
+    }
+}
+@keyframes animation_left_planete {
+    100%{
+        left : -1000px;
+    }
+}
+@keyframes animation_right_planete {
+    100%{
+        left: +2000px;
+    }
+}
+
+/*** RAJOUT MOUVEMENT FOND ***/
+.class_fond_1{
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-name: animation_class_fond_1 ;
+}
+@keyframes animation_class_fond_1 {
+    100%{
+        left: 0;
+        top: -100%;
+    }
+}
+.class_fond_2{
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-name: animation_class_fond_2 ;
+}
+@keyframes animation_class_fond_2 {
+    100%{
+        left: -100%;
+        top: 0;
+    }
+}
+.class_fond_3{
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-name: animation_class_fond_3 ;
+}
+@keyframes animation_class_fond_3 {
+    100%{
+        left: -100%;
+        top: -100%;
+    }
+}
+.class_fond_4{
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-name: animation_class_fond_4 ;
+}
+@keyframes animation_class_fond_4 {
+    100%{
+        left: 0;
+        top: 0;
+    }
+}
+
+.class_fond_5{
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-name: animation_class_fond_5 ;
+}
+@keyframes animation_class_fond_5 {
+    100%{
+        left: -100%;
+        top: 0;
+    }
+}
+.class_fond_6{
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-name: animation_class_fond_6 ;
+}
+@keyframes animation_class_fond_6 {
+    100%{
+        left: -50%;
+        top: 0;
+    }
+}
+.class_fond_7{
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-name: animation_class_fond_7 ;
+}
+@keyframes animation_class_fond_7 {
+    100%{
+        left: -100%;
+        top: -50%;
+    }
+}
