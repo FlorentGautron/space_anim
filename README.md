@@ -3,7 +3,7 @@ The menu design is inspired by space, featuring planets that are displayed again
 
 
 
-<img alt="illustration" src="https://github.com/FlorentGautron/space_anim/blob/master/Illustration.png?raw=true">
+<img alt="illustration" src="https://github.com/FlorentGautron/space_anim/blob/master/github_readme/Illustration.png?raw=true">
 
 
 Description:
@@ -26,4 +26,19 @@ Customization: The project allows for easy customization of the menu's appearanc
 Overall, this web project offers a visually stunning and interactive navigation menu that provides an engaging and intuitive user experience. With its space-themed design and planet animations, it adds a touch of creativity and excitement to website navigation, making it an excellent choice for websites seeking a unique and memorable interface.
 
 
+<img alt="illustration" src="https://github.com/FlorentGautron/space_anim/blob/master/github_readme/space_1.png?raw=true">
 
+
+<img alt="illustration" src="https://github.com/FlorentGautron/space_anim/blob/master/github_readme/space_2.png?raw=true">
+
+
+<img alt="illustration" src="https://github.com/FlorentGautron/space_anim/blob/master/github_readme/space_3.png?raw=true">
+
+
+<img alt="illustration" src="https://github.com/FlorentGautron/space_anim/blob/master/github_readme/space_4.png?raw=true">
+
+
+<img alt="illustration" src="https://github.com/FlorentGautron/space_anim/blob/master/github_readme/space_5.png?raw=true">
+
+
+<img alt="illustration" src="https://github.com/FlorentGautron/space_anim/blob/master/github_readme/space_6.png?raw=true">
