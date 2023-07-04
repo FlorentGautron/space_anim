@@ -1,10 +1,11 @@
 This web project is an original and visually captivating navigation menu using HTML and JavaScript. 
 The menu design is inspired by space, featuring planets that are displayed against a cosmic background.
 
-
+<br>
 
 <img alt="illustration" src="https://github.com/FlorentGautron/space_anim/blob/master/github_readme/Illustration.png?raw=true">
 
+<br>
 
 Description:
 The project focuses on enhancing user experience and engagement by incorporating interactive elements and an immersive space theme. The navigation menu is designed to provide intuitive access to different sections of a website while offering a visually appealing and unique interface.
@@ -28,17 +29,24 @@ Overall, this web project offers a visually stunning and interactive navigation 
 
 <img alt="illustration" src="https://github.com/FlorentGautron/space_anim/blob/master/github_readme/space_1.png?raw=true">
 
+<br>
 
 <img alt="illustration" src="https://github.com/FlorentGautron/space_anim/blob/master/github_readme/space_2.png?raw=true">
 
+<br>
 
 <img alt="illustration" src="https://github.com/FlorentGautron/space_anim/blob/master/github_readme/space_3.png?raw=true">
 
+<br>
 
 <img alt="illustration" src="https://github.com/FlorentGautron/space_anim/blob/master/github_readme/space_4.png?raw=true">
 
+<br>
 
 <img alt="illustration" src="https://github.com/FlorentGautron/space_anim/blob/master/github_readme/space_5.png?raw=true">
 
+<br>
 
 <img alt="illustration" src="https://github.com/FlorentGautron/space_anim/blob/master/github_readme/space_6.png?raw=true">
+
+<br>
