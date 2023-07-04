@@ -1,4 +1,4 @@
-This web project aims to create an original and visually captivating navigation menu using HTML and JavaScript. 
+This web project is an original and visually captivating navigation menu using HTML and JavaScript. 
 The menu design is inspired by space, featuring planets that are displayed against a cosmic background.
 
 
@@ -24,3 +24,6 @@ Responsive Design: The menu is designed to be responsive, ensuring compatibility
 Customization: The project allows for easy customization of the menu's appearance, including the choice of planet designs, background imagery, and color schemes. This enables website owners to tailor the menu to match their brand or design preferences.
 
 Overall, this web project offers a visually stunning and interactive navigation menu that provides an engaging and intuitive user experience. With its space-themed design and planet animations, it adds a touch of creativity and excitement to website navigation, making it an excellent choice for websites seeking a unique and memorable interface.
+
+
+
